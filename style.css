@@ -13,7 +13,8 @@ nav{
   top: 0;
 }
 nav > img{
- margin: 30px 20px;
+ margin-left: 30px;
+ margin-top:5px;
 }
 nav > ul{
  float: right;
@@ -38,7 +39,10 @@ header{
   font-size: 3em;
   padding: 40px;
   margin-top: 300px;
-  margin-bottom: 50pxçç;
+  margin-bottom: 50px;
+}
+#intro{
+  text-align: justify;
 }
 #hlogo{
   background-color: beige;
