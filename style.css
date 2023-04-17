@@ -3,13 +3,19 @@
   padding: 0px;
   border: 0px;
   list-style-type: none;
+  text-decoration: none;
   font-family: arial;
 }
+@font-face{
+   font-family: 'titania';
+   src: url(font/font_logo/Titania-Regular.ttf) format('truetype');
+
+}
 :root{
-  --cor-1:#0455BF;
-  --cor-2:#F2A35E;
-  --cor-3:#F27E7E;
-  --cor-4:#01403A;
+  --cor-1:#458deb;
+  --cor-2:#f5b074;
+  --cor-3:#f07979;
+  --cor-4:#02564e;
 }
 nav{
   height: 80px;
@@ -17,6 +23,7 @@ nav{
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 nav > img{
  margin-left: 30px;
@@ -27,9 +34,21 @@ nav > ul{
 }
 nav li{
   display: inline-block;
-  margin: 30px 40px;
+  font-size: 1.3em;
+  margin-top: 25px;
+  margin-right: 10px;
+}
+nav a{
+  padding: 33px 40px;
+  color: var(--cor-4);
+  transition: all ease-in-out .3s;
+}
+nav a:hover{
+  background-color: var(--cor-3);
 }
 header{
+  max-width: 1800px;
+  margin: auto;
   padding-top: 80px;
   background-color: var(--cor-4);
   width: 100%;
@@ -41,34 +60,54 @@ header{
   margin-top: 200px;
   background-color:var(--cor-4);
   width: 50%;
-  height: 500px;
+  height: 55%;
+  border-radius: 15px;
   text-align: center;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.568);
-  
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.333);
+  transition: all ease-in-out .5s;
+}
+#intro:hover{
+  width: 60%;
 }
 #intro h1{
   color:var(--cor-2);
   font-size: 3em;
   padding: 40px;
-  margin-top: 300px;
+  margin-top: 80px;
   margin-bottom: 50px;
-  position: ;
+  font-family: titania ;
+  letter-spacing: 3px;
 }
 #intro{
  color: white;
 }
 #intro p{
-  padding: 40px;
+  padding: 20px;
 }
 #hlogo{
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-bottom: 100px;
 }
 #hlogo img{
-  width: 50%;
+  width: 600px;
   height: auto;
   transform: scaleX(-1);
+}
+main{
+  height: 1500px;
+}
+section{
+  width: auto;
+  height: 1000px;
+  background-color: var(--cor-1);
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #0455BF;
 }
