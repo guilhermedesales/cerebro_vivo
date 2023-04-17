@@ -5,9 +5,15 @@
   list-style-type: none;
   font-family: arial;
 }
+:root{
+  --cor-1:#0455BF;
+  --cor-2:#F2A35E;
+  --cor-3:#F27E7E;
+  --cor-4:#01403A;
+}
 nav{
   height: 80px;
-  background-color: antiquewhite;
+  background-color: var(--cor-2);
   width: 100%;
   position: fixed;
   top: 0;
@@ -25,30 +31,44 @@ nav li{
 }
 header{
   padding-top: 80px;
-  background-color: aquamarine;
+  background-color: var(--cor-4);
   width: 100%;
   height: 1000px;
   display: flex;
 }
 #intro{
-  background-color: azure;
+  margin-left: 40px;
+  margin-top: 200px;
+  background-color:var(--cor-4);
   width: 50%;
+  height: 500px;
   text-align: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.568);
+  
 }
 #intro h1{
+  color:var(--cor-2);
   font-size: 3em;
   padding: 40px;
   margin-top: 300px;
   margin-bottom: 50px;
+  position: ;
 }
 #intro{
-  text-align: justify;
+ color: white;
+}
+#intro p{
+  padding: 40px;
 }
 #hlogo{
-  background-color: beige;
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 #hlogo img{
   width: 50%;
   height: auto;
+  transform: scaleX(-1);
 }
