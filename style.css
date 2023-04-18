@@ -111,3 +111,11 @@ footer{
   height: 50px;
   background-color: #0455BF;
 }
+footer a{
+  color: white;
+  transition: all ease-in-out .5s;
+}
+footer a:hover{
+  padding-left: 1px;
+  font-size: 1.3em;
+}

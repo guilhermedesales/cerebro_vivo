@@ -8,12 +8,21 @@
   <link rel="stylesheet" href="style.css">
   <!-- tema: tecnologia e educação (eu acho)
        logo: um cerebro com braços e pernas (cerebrinho)
-       tem q ter acessibilidade (nao entendi direito) 
-       pretendo fazer no estilo retro, pra contra por a ideia de tecnologia (talvez não de certo)  -->
+       tem q ter acessibilidade  -->
 </head>
 <body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
   <nav>
-    <img style="width: 50px;" src="img/cerebrinho/Sem título-1.png" alt="logo cerebrinho">
+    <img style="width: 50px;" src="img/cerebrinho/cerebrinho.png" alt="logo cerebrinho">
     <ul>
       <a href="#">
         <li>Sobre</li>
@@ -24,9 +33,9 @@
       <a href="#">
         <li>Contato</li>
       </a>
-      <a href="#">
+      <!-- <a href="#">
         <li>Configurações de Acessibilidade</li>
-      </a>
+      </a> -->
     </ul>
   </nav>
   <header>
@@ -35,7 +44,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aliquam aut quisquam reprehenderit magnam ut eius eveniet qui illum, ducimus amet nesciunt quo maiores? Iste beatae quam voluptates delectus nam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nostrum atque sequi fugit cupiditate quis suscipit voluptatum magni, hic, explicabo ex omnis fuga. Perferendis molestiae, quos unde accusamus quas possimus?</p>
     </div>
     <div id="hlogo">
-      <img src="img/cerebrinho/Sem título-1.png" alt="cerebrinho">
+      <img src="img/cerebrinho/cerebrinho.png" alt="cerebrinho">
     </div>
   </header>
   <main>
@@ -44,7 +53,7 @@
     </section>
   </main>
   <footer>
-    Design / Ilustração / Desenvolvimento web - Feito por <a href=""> Guilherme Sales</a>
+    <p>Design / Ilustração / Desenvolvimento web - Feito por <a href="portifolio/pagprincipal.html" target="_blank">Guilherme Sales</a></p>
   </footer>
 </body>
 </html>
