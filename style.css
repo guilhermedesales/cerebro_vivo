@@ -20,6 +20,7 @@
   --cor-4:#02564e;
 }
 strong{
+  font-size: 2em;
   color: var(--cor-3);
 }
 nav{
@@ -102,58 +103,112 @@ header{
   transform: scaleX(-1);
 }
 main{
-  height: 4000px;
+  height: 4800px;
   background-color: rgb(239, 239, 239);
 }
 #cursos h1{
    text-align: center;
-   padding-top: 50px;
+   padding-top: 80px;
    font-size: 3em;
    color: var(--cor-1);
 }
-.divcurso{
-  display: flex;
-  text-align: center;
+.curso1{
+  margin-right: 90px;
+  margin-bottom:150px;
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+  display:inline-flex;
+  margin-left: 40px;
+  margin-top:100px ;
+  position: relative; 
 }
-.divcurso img{
+.curso1 img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  transition:all ease-in-out .3s;
+}
+.curso1 > table {
+  display: none;
+  margin-top: 300px;
+  left: 0;
+  position: absolute;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: var(--cor-1);
+  width: 400px;
+  transition:all ease-in-out .6s;
+}
+th{
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+
+.curso1:hover img{
+  box-shadow:0px 0px 20px 10px #f079795d;
+  transform: scale(1.1);
+}
+
+.curso1:hover table {
+  display: block;
+}
+#avaliaçoes{
+  margin-top: 300px;
+  width: 100%;
+  height: 500px;
+}
+#avaliaçoes h1{
+  margin-left: 50px;
+  color: var(--cor-1);
+  font-size: 2.8em;
+}
+.alunos .aluno1{
+  display: flex;
+  margin-top: 450px;
+}
+.aluno1 img, .aluno2 img{
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin: 20px;
+  margin: 0px;
+  margin-left:100px;
+  box-shadow: 0px 0px 0px 15px var(--cor-3);
+}
+.aluno1 p, .aluno2 p{
+  width: 500px;
   margin-left: 80px;
-  margin-top: 200px;
-  transition: all ease-in-out .3s;
-
-}
-.divcurso img:hover{
-  box-shadow: 0px 0px 20px 20px #f0797963;
-}
-.info{
-  margin-top: 50px;
-  background-color: var(--cor-1);
-  width: 60%;
-  height: 300px;
-  border-radius: 15px;
-  box-shadow: 0px 0px 10px #00000056;
-  position: relative;
-}
-.info1, .info2, .info3, .info4, .info5{
-  position: absolute;
-  margin: 100px;
-  color: white;
   font-weight: bold;
-  text-align: center;
-  opacity: 0;
 }
-.info th{
-  font-size: 1.5em;
-  color: var(--cor-2);
+.aluno2{
+  display: flex;
+  margin-top: 150px;
+  float: right;
+  margin-right: 100px;
 }
-.info td{
-  padding: 20px;
+#parceiros{
+  margin-top: 1500px;
+  height: 1000px;
 }
-.img1:hover .info1{
-  opacity: 1;
+#parceiros h1{
+  margin-left: 100px;
+  font-size: 4em;
+  color: var(--cor-1);
+  margin-bottom: 200px;
+}
+#parceiros img{
+  width: 200px;
+  margin-left:10px;
+  padding: 65px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.181);
+}
+#comunidade{
+  background-color: #02564e;
+  height: 950px;
+}
+#comunidade img{
+  width: 200px;
 }
 footer{
   display: flex;
