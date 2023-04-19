@@ -5,6 +5,8 @@
   list-style-type: none;
   text-decoration: none;
   font-family: arial;
+  max-width: 1800px;
+  margin: auto;
 }
 @font-face{
    font-family: 'titania';
@@ -16,6 +18,9 @@
   --cor-2:#f5b074;
   --cor-3:#f07979;
   --cor-4:#02564e;
+}
+strong{
+  color: var(--cor-3);
 }
 nav{
   height: 80px;
@@ -47,7 +52,7 @@ nav a:hover{
   background-color: var(--cor-3);
 }
 header{
-  max-width: 1800px;
+  
   margin: auto;
   padding-top: 80px;
   background-color: var(--cor-4);
@@ -97,13 +102,75 @@ header{
   transform: scaleX(-1);
 }
 main{
-  height: 1500px;
+  height: 4000px;
+  background-color: rgb(239, 239, 239);
 }
-section{
-  width: auto;
-  height: 1000px;
-  background-color: var(--cor-1);
+#mercado{
+  margin: 0px 35px;
 }
+#mercado h1{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: var(--cor-1);
+  text-align: center;
+  font-size: 2.8em;
+}
+#mercado h2{
+  color: var(--cor-3);
+  font-size: 1.8em;
+  margin-left:60px ;
+  margin-top: 40px;
+}
+.topico1{
+  display: flex;
+  margin-bottom: 130px;
+}
+.topico1 p{
+  margin: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.topico1 img{
+  width: 50%;
+  box-shadow: 20px 20px 0px var(--cor-3);
+}
+.fundo{
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 800px;
+  position: relative;
+}
+.fundo div{
+  background-color: #f07979a0;
+  border-radius: 15px;
+  backdrop-filter: blur(6px);
+  font-weight: bold;
+  padding: 20px;
+  margin:60px;
+  margin-left:800px ;
+  position: absolute;
+}
+.topico3{
+  display: flex;
+  margin: 50px;
+  font-weight:bold ;
+  margin-bottom: 0px;
+}
+.topico3 img{
+  width: 650px;
+}
+.pd{
+  text-align: right;
+}
+.pb{
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
 footer{
   display: flex;
   justify-content: center;
