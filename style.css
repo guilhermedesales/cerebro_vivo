@@ -227,8 +227,17 @@ th{
   height: 950px;
 }
 #comunidade img{
-  width: 200px;
+  width: 700px;
+  margin: 50px;
 }
+#comunidade h1{
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  padding-top: 50px;
+  margin: 20px;
+}
+
 footer{
   display: flex;
   justify-content: center;
