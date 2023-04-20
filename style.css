@@ -103,7 +103,7 @@ header{
   transform: scaleX(-1);
 }
 main{
-  height: 5000px;
+
   background-color: rgb(239, 239, 239);
 }
 #cursos{
@@ -244,6 +244,7 @@ footer{
   align-items: center;
   height: 50px;
   background-color: #0455BF;
+
 }
 footer a{
   color: white;
