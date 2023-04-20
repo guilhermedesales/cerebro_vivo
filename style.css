@@ -103,14 +103,33 @@ header{
   transform: scaleX(-1);
 }
 main{
-  height: 4800px;
+  height: 5000px;
   background-color: rgb(239, 239, 239);
+}
+#cursos{
+  text-align: center;
 }
 #cursos h1{
    text-align: center;
    padding-top: 80px;
    font-size: 3em;
    color: var(--cor-1);
+   margin-bottom: 50px;
+}
+#cursos > a{
+  margin-bottom: 50px;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  background-color:var(--cor-2);
+  font-weight: bold;
+  transition: all ease-in-out .3s;
+}
+#cursos > a:hover{
+  padding: 30px;
+}
+.arti{
+  margin-top: 200px;
 }
 .curso1{
   margin-right: 90px;
@@ -120,7 +139,7 @@ main{
   height: 200px;
   display:inline-flex;
   margin-left: 40px;
-  margin-top:100px ;
+  margin-top:0px ;
   position: relative; 
 }
 .curso1 img{
@@ -138,7 +157,7 @@ main{
   border-radius: 15px;
   padding: 20px;
   background-color: var(--cor-1);
-  width: 400px;
+  width: 365px;
   transition:all ease-in-out .6s;
 }
 th{
@@ -198,7 +217,7 @@ th{
   margin-bottom: 200px;
 }
 #parceiros img{
-  width: 200px;
+  width: 180px;
   margin-left:10px;
   padding: 65px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.181);

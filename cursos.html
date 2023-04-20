@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição para os cursos </title>
+  <style>
+    body{
+      text-align: center;
+      background-color: #f5b074;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+      font-size: 3em;
+      color: #02564e;
+    }
+    header{
+      display: flex;
+      margin-top: 80px;
+    }
+    .img{
+      width:50%;
+    }
+    img{
+      width:50%;
+    }
+    form{
+      width: 50%;
+      margin-right: 80px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.238);
+      margin-top: 50px;
+      padding-top: 100px
+    }
+    input{
+      background-color:;
+      border: none;
+      border-radius: 15px;
+      margin-top: 20px;
+      padding: 20px;
+      width: 500px;
+    }
+    label{
+      display: block;
+      margin-top: 50px;
+      font-size: 2em;
+    }
+    select{
+      margin-top: 30px;
+      width: 550px;
+      height: 40px;
+      border-radius: 15px;
+      padding: 10px;
+  
+    }
+    #enviar{
+      margin-top: 50px;
+      font-size: 1.5em;
+      width: 400px;
+      color: white;
+      background-color: #02564e;
+      transition: all ease-in-out .3s;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    #enviar:hover{
+      background-color: white;
+      color: #02564e;
+      scale: 1.1;
+    }
+   
+  </style>
+</head>
+<body>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <h1>Inscrição pra os cursos grátis</h1>
+  <header>
+    <div class="img"><img style="width: 500px;" src="img/cerebrinho/cerebrinho.png" alt=""></div>
+
+    <form action="index.html" onsubmit="return enviar()">
+     <input type="email" placeholder="Seu Email" required>
+    <input id="nome" type="text" placeholder="Nome Completo" required>
+    <label>Curso de interesse:</label>
+    <select required>
+    <option>Desenvolvimento Web</option>
+    <option>Desenvolvimento Mobile</option>
+    <option>Game</option>
+    <option>Linguagem Python</option>
+    </select>
+    <input onclick="msg()" id="enviar" type="submit" value="Enviar"/>
+    </form>
+     <script>
+      function msg() {
+  alert("Inscrição Feita!");
+}
+     </script>
+
+  </header>
+  
+</body>
+</html>
